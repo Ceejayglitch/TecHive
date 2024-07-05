@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>TecHive</title>
+<!--
+Comila Template
+http://www.templatemo.com/tm-490-comila
+-->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<!-- stylesheets css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+
+  	<link rel="stylesheet" href="css/et-line-font.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+  	<link rel="stylesheet" href="css/vegas.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+  <link href="images/techive.png" rel="icon">
+
+	<link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<!-- preloader section -->
+<section class="preloader">
+	<div class="sk-circle">
+       <div class="sk-circle1 sk-child"></div>
+       <div class="sk-circle2 sk-child"></div>
+       <div class="sk-circle3 sk-child"></div>
+       <div class="sk-circle4 sk-child"></div>
+       <div class="sk-circle5 sk-child"></div>
+       <div class="sk-circle6 sk-child"></div>
+      <div class="sk-circle7 sk-child"></div>
+       <div class="sk-circle8 sk-child"></div>
+       <div class="sk-circle9 sk-child"></div>
+       <div class="sk-circle10 sk-child"></div>
+       <div class="sk-circle11 sk-child"></div>
+       <div class="sk-circle12 sk-child"></div>
+     </div>
+</section>
+
+<nav class="navbar">
+  <div class="container"> 
+    <br>
+    <center>
+      <button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".log-sign">Sign In/Register</button>
+    </center>
+  <br>
+    
+
+  </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade bs-modal-sm log-sign" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+              <li id="tab1" class=" active tab-style login-shadow "><a href="#signin" data-toggle="tab">Log In</a></li>
+              <li id="tab2" class=" tab-style "><a href="#signup" data-toggle="tab">Sign Up</a></li>
+              
+            </ul>
+        </div>
+      <div class="modal-body">
+        <div id="myTabContent" class="tab-content">
+       
+        <div class="tab-pane fade active in" id="signin">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+              
+               <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Email address</label></div>
+              
+              
+            <!-- Password input-->
+            <div class="group">
+<input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Password</label>
+    </div>
+<em>minimum 6 characters</em>
+
+           <div class="forgot-link">
+            <a href="#forgot" data-toggle="modal" data-target="#forgot-password"> I forgot my password</a>
+            </div>
+            
+
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+                <button id="signin" name="signin" class="btn btn-primary btn-block">Log In</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+          
+          
+        <div class="tab-pane fade" id="signup">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign Up Form -->
+            <!-- Text input-->
+            <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">First Name</label></div>
+            
+            <!-- Text input-->
+            <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Last Name</label></div>
+            
+            <!-- Password input-->
+            <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Email</label></div>
+            
+            <!-- Text input-->
+            <div class="group">
+<input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Password</label></div>
+              <em>1-8 Characters</em>
+            
+              <div class="group2">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Country</label></div>
+            
+            
+            
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="confirmsignup"></label>
+              <div class="controls">
+                <button id="confirmsignup" name="confirmsignup" class="btn btn-primary btn-block">Sign Up</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+      </div>
+      <!--<div class="modal-footer">
+      <center>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </center>
+      </div>-->
+    </div>
+  </div>
+</div>
+  
+   
+
+<!--modal2-->
+
+<div class="modal fade bs-modal-sm" id="forgot-password" tabindex="0" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Password will be sent to your email</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+        <fieldset>
+        <div class="group">
+<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+    <label class="label" for="date">Email address</label></div>
+        
+        
+        <div class="control-group">
+              <label class="control-label" for="forpassword"></label>
+              <div class="controls">
+                <button id="forpasswodr" name="forpassword" class="btn btn-primary btn-block">Send</button>
+              </div>
+            </div>
+          </fieldset>
+            </form>
+          
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<!-- home section -->
+<section id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12">
+				<div class="home-thumb">
+					
+					<h1 class="wow fadeInUp" data-wow-delay="0.4s">Greetings and welcome to Techive.</h1>
+          			<h3 class="wow fadeInUp" data-wow-delay="0.6s">We offer <strong>cutting-edge products</strong> and services paired with <strong>exceptional client support</strong>.</h3>
+          			<!-- <a href="#about" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="0.8s">Let's begin</a>
+        			<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-lg btn-success smoothScroll wow fadeInUp" data-wow-delay="1.0s">Notify me!</a> -->
+				</div>
+			</div>
+		</div>
+	</div>		
+</section>
+
+<!-- about section -->
+<section id="about">
+	<div class="container">
+		<div class="row">
+
+      <div class="col-md-6 col-sm-12 center-content">
+        <img src="images/techivewhole.png" class="img-responsive wow fadeInUp" alt="About">
+      </div>
+
+			<div class="col-md-6 col-sm-12">
+				<div class="about-thumb">
+					<div class="section-title">
+						<h1 class="wow fadeIn" data-wow-delay="0.2s"><strong>Techive</strong></h1>
+					</div>
+					<div class="wow fadeInUp" data-wow-delay="0.6s">
+						<p>Discover our realm of Technology, where groundbreaking ideas intersect with
+              exceptional quality. We provide premium Products/Services and exceptional
+              client assistance to fulfill your requirements. Join us and experience the distinct
+              impact our firm can have.</p>
+              <br>
+					</div>
+          <div class="section-title">
+            <h1 class="wow fadeIn" data-wow-delay="0.2s">Mission</h1>
+          </div>
+          <div class="wow fadeInUp" data-wow-delay="0.6s">
+            <p>
+              Our mission is simple: to provide our customers with outstanding
+ [products/services] that enhance their lives. We strive to combine the best of
+ quality, affordability, and innovation to deliver solutions that truly make a
+ difference.
+            </p>
+          </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- feature section -->
+<section id="feature">
+  <div class="container">
+    <div class="section-title" style="text-align: center;">
+      <h1 class="wow fadeIn" data-wow-delay="0.2s">Core Values</h1>
+    </div>
+
+    <div class="row">
+      <!-- First column of values -->
+      <div class="col-md-6">
+        <div class="media wow fadeInUp" data-wow-delay="0.4s">
+          <div class="media-object media-left">
+            <i class="icon icon-laptop"></i>
+          </div>
+          <div class="media-body">
+            <h2 class="media-heading">Excellence</h2>
+            <p>We pursue excellence in everything we do, ensuring our
+              [products/services] meet the highest standards.</p>
+          </div>
+        </div>
+
+        <div class="media wow fadeInUp" data-wow-delay="0.8s">
+          <div class="media-object media-left">
+            <i class="icon icon-refresh"></i>
+          </div>
+          <div class="media-body">
+            <h2 class="media-heading">Innovation</h2>
+            <p> We embrace change and continuously seek new ways to
+              improve and innovate.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second column of values -->
+      <div class="col-md-6">
+        <div class="media wow fadeInUp" data-wow-delay="1.2s">
+          <div class="media-object media-left">
+            <i class="icon icon-chat"></i>
+          </div>
+          <div class="media-body">
+            <h2 class="media-heading">Customer Focus</h2>
+            <p>Our customers are at the center of our business. We
+              listen, understand, and act on their needs.</p>
+          </div>
+        </div>
+
+        <div class="media wow fadeInUp" data-wow-delay="1.6s">
+          <div class="media-object media-left">
+            <i class="icon icon-shield"></i>
+          </div>
+          <div class="media-body">
+            <h2 class="media-heading">Integrity</h2>
+            <p>We operate with honesty and integrity, building lasting
+              relationships based on trust.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Product Section -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-2 col-md-8 col-sm-12">
+        <div class="section-title">
+          <h1 class="wow fadeInUp" data-wow-delay="0.3s">Products</h1>
+          <p class="wow fadeInUp" data-wow-delay="0.6s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <!-- Product 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="product wow fadeInUp" data-wow-delay="0.3s">
+            <img src="images/Gamakay_keyboard.jpg" alt="Product 1">
+            <h2>GK Gamakay TK75</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="price">₱2,699.00</div>
+            <div class="actions">
+              <button class="btn btn-primary btn-add-to-cart">
+                <i class="fa fa-shopping-cart"> Add to Cart </i>
+              </button>
+              <label class="ui-bookmark">
+                  <input type="checkbox" />
+                  <div class="bookmark">
+                      <svg
+                          viewBox="0 0 16 16"
+                          style="margin-top:4px"
+                          class="bi bi-heart-fill"
+                          height="25"
+                          width="25"
+                          xmlns="http://www.w3.org/2000/svg"
+                      >
+                          <path
+                              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                              fill-rule="evenodd"
+                          ></path>
+                      </svg>
+                  </div>
+              </label>
+          </div>
+      </div>
+  </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="product wow fadeInUp" data-wow-delay="0.6s">
+            <img src="images/aorus.jpg" alt="Product 2">
+            <h2>Gigabyte x570S Aorus Master</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="price">₱14,800.00</div>
+            <div class="actions">
+              <button class="btn btn-primary btn-add-to-cart">
+                <i class="fa fa-shopping-cart"> Add to Cart </i>
+              </button>
+                <label class="ui-bookmark">
+                    <input type="checkbox" />
+                    <div class="bookmark">
+                        <svg
+                            viewBox="0 0 16 16"
+                            style="margin-top:4px"
+                            class="bi bi-heart-fill"
+                            height="25"
+                            width="25"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                                fill-rule="evenodd"
+                            ></path>
+                        </svg>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    
+
+      <!-- Product 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="product wow fadeInUp" data-wow-delay="0.9s">
+          <img src="images/intelI9.jpg" alt="Product 3">
+          <h2>Intel Core i9-12900F Processor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="price">₱25,950.00</div>
+          <div class="actions">
+            <button class="btn btn-primary btn-add-to-cart">
+              <i class="fa fa-shopping-cart"> Add to Cart </i>
+            </button>
+            <label class="ui-bookmark">
+                <input type="checkbox" />
+                <div class="bookmark">
+                    <svg
+                        viewBox="0 0 16 16"
+                        style="margin-top:4px"
+                        class="bi bi-heart-fill"
+                        height="25"
+                        width="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                            fill-rule="evenodd"
+                        ></path>
+                    </svg>
+                </div>
+            </label>
+        </div>
+    </div>
+</div>
+
+
+      <div class="col-md-4 col-sm-6">
+        <div class="product wow fadeInUp" data-wow-delay="0.3s">
+          <img src="images/hyperX_alloy.jpg" alt="Product 1">
+          <h2>Alloy Origins 60 Percent Mechanical Keyboard</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="price">₱4,650.00</div>
+          <div class="actions">
+            <button class="btn btn-primary btn-add-to-cart">
+              <i class="fa fa-shopping-cart"> Add to Cart </i>
+            </button>
+            <label class="ui-bookmark">
+                <input type="checkbox" />
+                <div class="bookmark">
+                    <svg
+                        viewBox="0 0 16 16"
+                        style="margin-top:4px"
+                        class="bi bi-heart-fill"
+                        height="25"
+                        width="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                            fill-rule="evenodd"
+                        ></path>
+                    </svg>
+                </div>
+            </label>
+        </div>
+    </div>
+</div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="product wow fadeInUp" data-wow-delay="0.3s">
+          <img src="images/Geforce_rtx360.jpg" alt="Product 1">
+          <h2>Nvidia GeForce RTX 3060</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="price">₱17,558.00</div>
+          <div class="actions">
+            <button class="btn btn-primary btn-add-to-cart">
+              <i class="fa fa-shopping-cart"> Add to Cart </i>
+            </button>
+            <label class="ui-bookmark">
+                <input type="checkbox" />
+                <div class="bookmark">
+                    <svg
+                        viewBox="0 0 16 16"
+                        style="margin-top:4px"
+                        class="bi bi-heart-fill"
+                        height="25"
+                        width="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                            fill-rule="evenodd"
+                        ></path>
+                    </svg>
+                </div>
+            </label>
+        </div>
+    </div>
+</div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="product wow fadeInUp" data-wow-delay="0.3s">
+          <img src="images/ryzen9.jpg" alt="Product 1">
+          <h2>AMD Ryzen 9</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="price">₱18,750.00</div>
+          <div class="actions">
+            <button class="btn btn-primary btn-add-to-cart">
+              <i class="fa fa-shopping-cart"> Add to Cart </i>
+            </button>
+            <label class="ui-bookmark">
+                <input type="checkbox" />
+                <div class="bookmark">
+                    <svg
+                        viewBox="0 0 16 16"
+                        style="margin-top:4px"
+                        class="bi bi-heart-fill"
+                        height="25"
+                        width="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                            fill-rule="evenodd"
+                        ></path>
+                    </svg>
+                </div>
+            </label>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+      <svg class="svgcolor-light" preserveAspectRatio="none" viewBox="0 0 100 102" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0 L50 100 L100 0 Z"></path>
+      </svg>
+
+      <div class="col-md-4 col-sm-6">
+        <h2>TECHIVE</h2>
+          <div class="wow fadeInUp" data-wow-delay="0.3s">
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus lacus nulla, eget varius justo tristique ut. Etiam a tellus magna.</p>
+              <br>
+          </div>
+      </div>
+
+      <div class="col-md-1 col-sm-1"></div>
+
+      <div class="col-md-4 col-sm-5">
+        <h2>Our Location</h2>
+        <p class="wow fadeInUp" data-wow-delay="0.6s">
+          Lorem Ipsum
+        </p>
+        <ul class="social-icon">
+          <li><a href="#" class="fa fa-facebook wow bounceIn" data-wow-delay="0.9s"></a></li>
+          <li><a href="#" class="fa fa-twitter wow bounceIn" data-wow-delay="1.2s"></a></li>
+          <li><a href="#" class="fa fa-instagram wow bounceIn" data-wow-delay="1.4s"></a></li>
+          <li><a href="#" class="fa fa-google wow bounceIn" data-wow-delay="1.6s"></a></li>
+        </ul>
+      </div>
+
+		</div>
+	</div>
+</footer>
+
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- javscript js -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/vegas.min.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const addToCartButtons = document.querySelectorAll('.btn-add-to-cart');
+
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        if (this.classList.contains('added')) {
+          this.classList.remove('added');
+          this.innerHTML = '<i class="fa fa-shopping-cart"></i> Add to Cart';
+        } else {
+          this.classList.add('added');
+          this.innerHTML = '<i class="fa fa-shopping-cart"></i> Added to Cart';
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+  // Open the modal
+document.getElementById('loginBtn').onclick = function() {
+  document.getElementById('myModal').style.display = 'block';
+}
+
+// Close the modal when close button or outside modal clicked
+document.getElementsByClassName('close')[0].onclick = function() {
+  document.getElementById('myModal').style.display = 'none';
+}
+
+// Tab functionality
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName('tabcontent');
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = 'none';
+  }
+  tablinks = document.getElementsByClassName('tablinks');
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(' active', '');
+  }
+  document.getElementById(tabName).style.display = 'block';
+  evt.currentTarget.className += ' active';
+}
+
+</script>
+
+</body>
+</html>
